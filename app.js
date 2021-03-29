@@ -40,11 +40,7 @@ winterSoldierName()
   
 
 
-// 3 Use a promise in the agent13 function (Put the setTimeout inside the function with the resolve and reject parameters that is passed into the Promise). 
-
-//Also, use Async/Await so the value of `Sharon Carter` will display in the terminal/console for the name3 variable when the falconName function is run.
-
-
+// 3 
 let name3 = "Agent 13";
 
 
@@ -84,4 +80,8 @@ const p3 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('Third Promise')
   }, 4000);
+});
+
+Promise.all([p1, p2, p3]).then(values => { 
+  console.log(values);
 });
